@@ -3,6 +3,13 @@
 	padding: 0;
 	box-sizing: border-box;
 }
+html{
+
+	width: 100%;
+	max-width: 100%;
+	overflow-x: hidden;
+}
+
 ul {
 	list-style-type: none;
 }
@@ -62,7 +69,6 @@ body {
 	z-index: -1;
 }
 .container {
-	width: 85%;
 	max-width: 1200px;
 	padding-left: 1%;
 	padding-right: 1%;
@@ -390,10 +396,12 @@ body {
 	background-color: #b59f5b;
 	opacity: 0.4;
 }
+
 .trends-wrp {
 	display: flex;
 	flex-wrap: wrap;
 }
+
 .trends-item-wrp {
 	display: flex;
 	align-items: flex-end;
@@ -442,6 +450,7 @@ body {
 	padding: 40px 40px 35px 25px;
 	border: solid 3px rgba(181, 159, 91, 0.6);
 }
+
 .tags {
 	display: flex;
 	flex-wrap: wrap;
@@ -527,6 +536,15 @@ body {
 		width: 100%;
 		margin-right: 0;
 		margin-bottom: 3px;
+	}
+}
+
+@media (max-width: 640px) and (orientation: landscape) {
+	.trends-item-wrp {
+		width:50%;
+	}
+	.trends-item-wrp:last-child{
+		width:50%;
 	}
 }
 
