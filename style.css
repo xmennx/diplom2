@@ -539,6 +539,15 @@ body {
 	}
 }
 
+@media (min-width: 641px) and (max-width: 1200px) and (orientation: landscape){
+	.trends-item-wrp {
+		width:24%;
+	}
+	.trends-item-wrp:last-child{
+		width:24%;
+	}
+}
+
 @media (max-width: 640px) and (orientation: landscape) {
 	.trends-item-wrp {
 		width:50%;
